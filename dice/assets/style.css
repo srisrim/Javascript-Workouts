@@ -1,0 +1,38 @@
+.score {
+    text-align: center;
+    padding: 8px 0;
+    margin-bottom: 5%;
+}
+.score .form-control {
+    max-width: 150px;
+    display: inline-block;
+    padding: 18px;
+    margin: 0 0 16px;
+}
+.card  {
+    text-align: center;
+}
+.active {
+    background: #f6f5f7;
+}
+.dice-block {
+    text-align: center;
+    padding: 20% 0;
+}
+.dice-block > div {
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+#dice-img img {
+    max-width: 30px;
+    margin: 0 auto;
+}
+.active-user {
+    font-size: 1rem; 
+}
+.user-status {
+    display: none;
+}
+.active .user-status {
+    display: inline-block;
+}
