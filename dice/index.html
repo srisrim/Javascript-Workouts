@@ -14,16 +14,16 @@
 
 <body>
 	<div class="container" id="js-app">
-		<!--<div class="row">
+		<div class="row mb-20">
 			<div class="col-sm-12">
-				<h1 class="page-header text-center">JavaScript - GameApp </h1>
+				<h1 class="page-header text-center">JavaScript - Pig Game </h1>
 			</div>
-		</div>-->
-		<div class="row">
+		</div>
+		<div class="row mb-20">
 			<div class="col-sm-5">
-				<div class="card user-0 active">
+				<div class="card user-0 active player-card">
 					<div class="card-body">
-						<h4 class="card-title">User 1 <span class="user-status"><i class="fa fa-circle fa-xs" aria-hidden="true"></i></span></h4>
+						<h4 class="card-title" id="name-0">User 1</h4>
 						<div class="score">
 							<label class="form-control" id="score-0">100</label>
 						</div>
@@ -41,17 +41,17 @@
 						<img alt="Dice" src="assets/img/dice-clipart-1.png" class="img-responsive" id="dice-src">
 					</div>
 					<div class="dice-roll">
-						<button class="btn btn-primary"> <i class="fa fa-retweet" aria-hidden="true"></i> Roll Dice</button>
+						<button class="btn btn-primary btn-roll-dice"> <i class="fa fa-retweet" aria-hidden="true"></i> Roll Dice</button>
 					</div>
 					<div class="save-dice">
-						<a href="#"><i class="fa fa-check-square" aria-hidden="true"></i> Hold</a> 
+						<a href="#" id="hold-score"><i class="fa fa-check-square" aria-hidden="true"></i> Hold</a>
 					</div>
 				</div>
 			</div>
 			<div class="col-sm-5">
-				<div class="card user-1">
+				<div class="card user-1 player-card">
 					<div class="card-body">
-						<h4 class="card-title">User 2 <span class="user-status"><i class="fa fa-circle fa-xs" aria-hidden="true"></i></span></h4>
+						<h4 class="card-title" id="name-1">User 2</h4>
 						<div class="score">
 							<label class="form-control" id="score-1">100</label>
 						</div>
@@ -60,6 +60,26 @@
 								Current Score : <span class="badge badge-secondary" id="current-score-1">4</span>
 							</button>
 						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row mb-20">
+			<div class="col-sm-12">
+				<div class="card rules-card">
+					<div class="card-body">
+						<h4 class="card-title">So how do you play Pig?</h4>
+						<ul class="list-group">
+							<li class="list-group-item">Choose a player to go first.</li>
+							<li class="list-group-item">That player throws a die and scores as many points as the total shown on the die providing the die doesn’t roll a
+								1.
+							</li>
+							<li class="list-group-item">The player may continue rolling and accumulating points (but risk rolling a 1) or end his turn.</li>
+							<li class="list-group-item">If the player rolls a 1 his turn is over, he loses all points he accumulated that turn, and he passes the die to the
+								next player.</li>
+							<li class="list-group-item">Play passes from player to player until a winner is determined.</li>
+							<li class="list-group-item">The first player to accumulate 100 or more points wins the game.</li>
+						</ul>
 					</div>
 				</div>
 			</div>
